@@ -1,0 +1,34 @@
+<package format="3">
+  <name>moveit_actions</name>
+  <version>0.10.0</version>
+  <description>Messages, services and actions used by MoveIt</description>
+  <author email="isucan@google.com">Ioan Sucan</author>
+  <author email="sachinc@sri.com">Sachin Chitta</author>
+
+  <maintainer email="dave@dav.ee">Dave Coleman</maintainer>
+  <maintainer email="mferguson@fetchrobotics.com">Michael Ferguson</maintainer>
+  <maintainer email="me@v4hn.de">Michael Goerner</maintainer>
+  <maintainer email="rhaschke@techfak.uni-bielefeld.de">Robert Haschke</maintainer>
+  <maintainer email="130s@2000.jukuin.keio.ac.jp">Isaac I. Y. Saito</maintainer>
+
+  <license>BSD</license>
+  <url type="website">http://moveit.ros.org</url>
+  <url type="bugtracker">https://github.com/ros-planning/moveit_msgs/issues</url>
+  <url type="repository">https://github.com/ros-planning/moveit_msgs</url>
+
+  <build_depend>message_generation</build_depend>
+  <build_depend>rosidl_default_generators</build_depend>
+  <build_depend>action_msgs</build_depend>
+  <build_depend>moveit_msgs</build_depend>
+
+  <exec_depend>message_generation</exec_depend> <!-- provide message generation to downstream packages -->
+  <exec_depend>message_runtime</exec_depend>
+  <exec_depend>action_msgs</exec_depend>
+  <exec_depend>moveit_msgs</exec_depend>
+
+  <member_of_group>rosidl_interface_packages</member_of_group>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

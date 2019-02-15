@@ -10,7 +10,7 @@ string group_name
 string end_effector
 
 # a list of possible grasps to be used. At least one grasp must be filled in
-Grasp[] possible_grasps
+moveit_msgs/Grasp[] possible_grasps
 
 # the name that the support surface (e.g. table) has in the collision map
 # can be left empty if no name is available
@@ -32,7 +32,7 @@ string[] attached_object_touch_links
 bool minimize_object_distance
 
 # Optional constraints to be imposed on every point in the motion plan
-Constraints path_constraints
+moveit_msgs/Constraints path_constraints
 
 # The name of the motion planner to use. If no name is specified,
 # a default motion planner will be used
@@ -47,23 +47,23 @@ string[] allowed_touch_objects
 float64 allowed_planning_time
 
 # Planning options
-PlanningOptions planning_options
+moveit_msgs/PlanningOptions planning_options
 
 ---
 
 # The overall result of the pickup attempt
-MoveItErrorCodes error_code
+moveit_msgs/MoveItErrorCodes error_code
 
 # The full starting state of the robot at the start of the trajectory
-RobotState trajectory_start
+moveit_msgs/RobotState trajectory_start
 
 # The trajectory that moved group produced for execution
-RobotTrajectory[] trajectory_stages
+moveit_msgs/RobotTrajectory[] trajectory_stages
 
 string[] trajectory_descriptions
 
 # The performed grasp, if attempt was successful
-Grasp grasp
+moveit_msgs/Grasp grasp
 
 # The amount of time in seconds it took to complete the plan
 float64 planning_time
